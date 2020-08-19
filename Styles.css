@@ -1,0 +1,215 @@
+/* master style*/
+body{
+  margin: opx;
+  background-color: black;
+  background-color: #e3edf7;
+  font-family: "lato", SSans-Serif;
+}
+.container{
+  display: grid;
+  grid-template-columns: 1fr;
+/* Nav style*/
+}
+.nav-wrapper{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #5d4954;
+}
+.left-side{
+  display: flex;
+}
+.nav-wrapper > .right-side > div{
+  color: midnightBlue;
+  text-decoration: none;
+}
+.nav-wrapper > .left-side > div{
+  margin: 2px;
+  font-size: 0.8em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.nav-link-wrapper{
+  color: midnightBlue;
+  text-decoration: none;
+  height: 13px;
+  border-bottom: 1px solid transperant;
+  transition: border-bottom 0.5s;
+}
+.right-side div{
+  text-decoration: none;
+  font-size: 0.8em;
+  letter-spacing: 2px;
+}
+.nav-link-wrapper a{
+  color: #8a8a8a;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+.nav-link-wrapper:hover{
+  border-bottom: 1px solid black;
+}
+.nav-link-wrapper a:hover{
+  color: black;
+}
+.active-nav-link{
+  border-bottom: 1px solid !important;
+}
+.active-nav-link a{
+  color: black !important;
+}
+
+/* portfolio styles */
+.portfolio-items-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 4px;
+  grid-row-gap: 4px;
+  padding: 10px;
+}
+.portfolio-item-wrapper{
+  position: relative;
+}
+.portfolio-img-backround{
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.image-text-wrapper{
+  position: absolute;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.logo-wrapper img{
+  width: 75%;
+  margin-bottom: 20px;
+}
+
+.image-text-wrapper .subtitle {
+  transition: 1s;
+  font-weight: 600;
+  color: transperant;
+}
+.image-text-wrapper:hover .subtitle {
+  font-weight: 600;
+  color: rgb(32, 245, 238);
+  font-size: 0.8em;
+}
+.nav2-wrapper{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+  width: 100vw;
+}
+.nav2-wrapper a{
+  color: #8a8a8a;
+  font-size: 1em;
+  text-decoration: none;
+  width: 100vw;
+}
+
+.img-darken{
+  transition: 1s;
+  filter: brightnes(10%);
+}
+/* About style */
+
+.two-column-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.profile-img-wrapper img{
+  width: 100%;
+  padding-top: 20px;
+}
+.profile-content-wrapper{
+  padding: 10px;
+  font-size: 0.6em;
+  justify-content: center;
+  text-align: justify;
+}
+.profile-content-wrapper h2{
+  color: lightseagreen;
+}
+/* Contact styles */
+.contact-two-column-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contact-content-wrapper{
+  color: grey;
+  padding: 20px;
+  justify-items: right;
+  border-top: 2px solid;
+}
+.contact-content-wrapper p{
+  padding-top: 0px;
+  background-color: rgb(157, 169, 189);
+  color: white;
+}
+.contact-input-wrapper{
+  padding: 20px;
+  border-top: 2px solid;
+  border-left: 2px solid;
+}
+.contact-input-wrapper div{
+  padding-top: 0px;
+  background-color: rgb(157, 169, 189);
+  color: white;
+}
+.address{
+  text-align: justify;
+}
+.black{
+  color: #5d4954;
+}
+/*
+.nav3-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  justify-content: space-around;
+  border-top: 2px solid;
+}
+*/
+.nav3-wrapper{
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+.nav3-wrapper a{
+  display: flex;
+  height: 15px;
+  width:  25px;
+  color: #777;
+  justify-content: center;
+  justify-items: center;
+  margin: 5px 5px 5px 5px;
+  transform: translatev(2px);
+  text-decoration: none;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+.social-media{
+  text-transform: uppercase;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  font-family: Sans-Serif;
+  font-size: 25px;
+  font-weight: normal;
+  color: #555;
+}
+a:hover{
+  transition: 1s;
+  color: midnightBlue;
+  transform: translatev(2px);
+}
